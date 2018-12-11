@@ -15,7 +15,7 @@
 * 開啟 Anaconda Prompt
 * 進入相關資料夾後 打上
 ```
-$jupyter notebook
+$ jupyter notebook
 ```
 * notebook會以網頁模式開啟
 * 新增檔案並選擇撰寫語言
