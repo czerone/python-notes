@@ -11,6 +11,11 @@ Here are python codes.
 
 *  Hello World.ipynb : 印出 Hello World 的簡易程式碼
 
+### test_debug_tutorail ###
+
+* add_num.py : 簡易加法程式
+* test_add_num.py : 測試 add_num.py 程式
+
 ### Anaconda Tutorial ###
 
 * Anaconda 可以幫助切換python使用環境
@@ -35,3 +40,7 @@ $ conda env list
 $ pip freeze
 ```
 
+### Sublime Text 快捷鍵 ###
+
+* Tab 往外縮排
+* Shift + Tab 往內縮排
