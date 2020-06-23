@@ -1,7 +1,8 @@
 # PyQT Tutorial #
 
 如何使用 Anaconda 設置 PyQT 來使用 Python GUI
-Login Page 設計
+
+## Login Page 設計 ##
 
 ### Setup ###
 
@@ -43,6 +44,8 @@ $ python app.py
 
 * Create a login page. If pass then enter the real function page.
 
+
+### References ###
 
 * 參考來源: https://dotblogs.com.tw/zeus83157/2018/06/23/011440
 
