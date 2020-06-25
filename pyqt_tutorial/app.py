@@ -22,7 +22,7 @@ class AppWindow(QMainWindow):
 
 
 
-class LoginWindow(QWidget):
+class LoginWindow(QDialog):
     def __init__(self):
         super(self.__class__, self).__init__()
         self.ui = Ui_LoginProfile()
