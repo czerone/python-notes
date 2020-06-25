@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>LoginProfile</class>
+ <widget class="QWidget" name="LoginProfile">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,9 +11,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Login Profile</string>
   </property>
-  <widget class="QPushButton" name="login">
+  <widget class="QPushButton" name="login_button">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -24,6 +24,9 @@
    </property>
    <property name="text">
     <string>Login</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="password">
@@ -70,6 +73,15 @@
      <width>113</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>密碼不超過15位，只能有數字或字母</string>
    </property>
   </widget>
   <widget class="QLabel" name="result">
