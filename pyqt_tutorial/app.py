@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QDialog, QMainWindow, QWidget, QApplication
+from PyQt5.QtWidgets import QDialog, QMainWindow, QApplication
 from LoginPageUI import Ui_LoginProfile
 from FileNameEncryption import Ui_FileEncryption
 
@@ -20,7 +20,17 @@ class AppWindow(QMainWindow):
         sequence = self.ui.sequence.text()
         self.ui.result.setText("Change Name Success")
 
+    def resizeEvent(self, event):
+        print('Filename Encryption Window Resize!')
+        width, height = event.size().width(), event.size().height()
+        print(event.size())
+        print(width, height)
 
+    def closeEvent(self, event):
+        print('Filename Encryption Window Close!')
+        self.l = LoginWindow()
+        print('Login Window Open!')
+        self.l.show()
 
 class LoginWindow(QDialog):
     def __init__(self):
@@ -33,21 +43,38 @@ class LoginWindow(QDialog):
         self.show()
 
     def loginCheck(self):
+        print('check account and password...')
         input_account = self.ui.input_account.text()
         input_password = self.ui.input_password.text()
         if input_password == 'chen' and input_account == 'poting':
+            print('Success')
             self.ui.result.setText("Success")
             self.slot_btn_function()
         else:
+            print('Failed')
             self.ui.result.setText("Failed")
+
     def slot_btn_function(self):
+        print('Login Window Close!')
         self.hide()
+        print('Filename Encryption Window Open!')
         self.a = AppWindow()
         self.a.show()
+
+    def resizeEvent(self, event):
+        print('Login Window Resize!')
+        width, height = event.size().width(), event.size().height()
+        print(event.size())
+        print(width, height)
+
+    def closeEvent(self, event):
+        print('Login Window Close!')
+
 
 def main():
     app = QApplication(sys.argv)
     w = LoginWindow()
+    print('Login Window Open!')
     w.show()
     sys.exit(app.exec_())
 
