@@ -4,6 +4,12 @@
 
 ## Login Page 設計 ##
 
+* 使用正確的帳號密碼登入以使用系統
+
+## File Name Encryption 設計 ##
+
+*
+
 ### Setup ###
 
 * Windows系統需先安裝 Anaconda
@@ -43,6 +49,12 @@ $ python app.py
 ### Current Process ###
 
 * Create a login page. If pass then enter the real function page.
+* loginCheck function: check if the account and password is correct or not. Only check in a simple way.
+
+
+
+* Create a file name encryption page. The page will show up after correct login ac and ps.
+* changeName function: now it has nothing to do...
 
 
 ### References ###
