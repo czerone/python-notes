@@ -8,7 +8,11 @@
 
 ## File Name Encryption 設計 ##
 
-*
+* 可以更改檔案名稱
+
+## pyinstall ##
+
+* 打包 python檔案變成 exe
 
 ### Setup ###
 
@@ -56,6 +60,7 @@ $ python app.py
 * Create a file name encryption page. The page will show up after correct login ac and ps.
 * changeName function: now it has nothing to do...
 
+* Create a pyinstaller.py to pack python program to window exe.
 
 ### References ###
 
@@ -66,3 +71,7 @@ $ python app.py
 * 打包程式參考: https://blog.daychen.tw/2017/03/pyqt5-pyqtdeploy.html
 
 * 打包程式參考2: https://blog.daychen.tw/2017/03/pyqt5-pyqtdeploy_27.html
+
+* 打包程式參考3: https://www.itread01.com/content/1544417463.html
+
+* 打包程式參考4: https://www.twblogs.net/a/5b7f6df62b717767c6af9096
