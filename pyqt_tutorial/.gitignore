@@ -1,1 +1,3 @@
 *.pyc
+*.spec
+pyqt_tutorial/*/*
